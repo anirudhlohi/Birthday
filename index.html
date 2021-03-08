@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    
+    <div class="jumbotron text-center">
+        <h1 class="text-capitalize">Game time</h1>
+        <p>Oh no! Somenome needs your help. He has to win this match! He is very tired to play more, so , you have to play.
+            The score is 38-38. He has to score his 39th goal. Help hime to score his 39th goal by clicking the following buttons.
+        </p>
+        <h4><b class="text-danger">NOTE:</b><b>THE GOAL WHICH IS ON THE RIGHT SIDE IS YOUR GOAL.</b></h4>
+    </div>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <br>
+    <br>
+    <br>
+    <div id="blank">
+        <img src="39.gif">
+    </div>
+    <span>
+        <button class="btn btn-success" onclick="right()">Right</button>
+        &nbsp;
+        &nbsp;
+        <button class="btn btn-warning" onclick="left()">Left</button>
+        &nbsp;
+        &nbsp;
+        <button class="btn btn-danger" onclick="up()">Up</button>
+        &nbsp;
+        &nbsp;
+        <button class="btn btn-primary" onclick="down()">Down</button>
+    </span>
+    <br>
+    <br>
+    <br>
+    <button class="btn btn-info" onclick="next()">Next</button>
+<script src="main.js"></script>
+</body>
